@@ -14,12 +14,12 @@ public class UtenteService {
     @Autowired
     private UtenteRepository utenteRepository;
 
- public  void saveUtente(Utente utente){
-     boolean exists = utenteRepository.existsByEmail(utente.getEmail());
-     if (exists) {
-         throw new ValidationException("Email già in uso!");
-     }
-     utenteRepository.save(utente);
-     log.info("L'utente " + utente.getUsername() + " è stato salvato correttamente!");
- }
+    public  void saveUtente(Utente utente){
+        boolean exists = utenteRepository.existsByEmail(utente.getEmail());
+        if (exists) {
+            throw new ValidationException("Email già in uso!");
+        }
+        utenteRepository.save(utente);
+        log.info("L'utente " + utente.getUsername() + " è stato salvato correttamente!");
+    }
 }
