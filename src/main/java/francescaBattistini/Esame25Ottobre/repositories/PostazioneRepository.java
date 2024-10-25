@@ -11,5 +11,5 @@ import java.util.List;
 // l'utente prenota il tipo postazione 
 @Repository
 public interface PostazioneRepository extends JpaRepository<Postazione, Long> {
-
+    List<Postazione> findByTypoPostazione(TypoPostazione typoPostazione);
 }

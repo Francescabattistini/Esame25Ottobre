@@ -23,13 +23,13 @@ public class UtenteRunner implements CommandLineRunner {
             Utente Alessia = new Utente("alessia32","alessia giovannetti","alessiagiovannetti@gmail.com");
             Utente Gino = new Utente("ginetto","gino pagino","ginopaggino@gmail.com");
 
-            try {
+           /* try {
                 utenteService.saveUtente(Carlo);
                 utenteService.saveUtente(Alessia);
                 utenteService.saveUtente(Gino);
             } catch (NotFoundException ex) {
                 log.error(ex.getMessage());
-            }
+            }*/
 
     }
 

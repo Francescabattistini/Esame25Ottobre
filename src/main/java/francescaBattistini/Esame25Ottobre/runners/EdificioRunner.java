@@ -21,12 +21,12 @@ public class EdificioRunner  implements CommandLineRunner {
         Edificio edificio1 = new Edificio("carlos", "via Roma 23","Milano");
         Edificio edificio2 = new Edificio("ginos", "via sandro 43 ","Roma");
         Edificio edificio3 = new Edificio("dams", "via gingol 11","Bari");
-        try {
+        /*  try {
             edificioService.saveEdificio(edificio1);
             edificioService.saveEdificio(edificio2);
             edificioService.saveEdificio(edificio3);
         } catch (NotFoundException ex) {
             log.error(ex.getMessage());
-        }
+        }*/
     }
 }
