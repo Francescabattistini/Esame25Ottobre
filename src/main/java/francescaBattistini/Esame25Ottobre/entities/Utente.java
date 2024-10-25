@@ -24,7 +24,7 @@ public class Utente {
     private String email;
 
     @OneToMany(mappedBy = "utente")// un utente può avere tante postazioni
-   // @ToString.Exclude
+    @ToString.Exclude
     List<Prenotazione> prenotazioni;
 
 

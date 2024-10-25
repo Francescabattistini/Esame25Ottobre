@@ -34,6 +34,6 @@ public class PrenotazioneService {
             log.info("La prenotazione " + prenotazione.getId() + " è stata salvata correttamente!");
 
     }
-    // non ho finito ma ce l'ho messa tutta 
+    // non ho finito ma ce l'ho messa tutta
     }
 
