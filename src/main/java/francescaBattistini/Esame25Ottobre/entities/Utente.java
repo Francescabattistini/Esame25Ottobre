@@ -3,6 +3,8 @@ package francescaBattistini.Esame25Ottobre.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -20,6 +22,12 @@ public class Utente {
     private String nomeCognome;
     @Column(nullable = false)
     private String email;
+
+    @OneToMany(mappedBy = "utente")// un utente può avere tante postazioni
+   // @ToString.Exclude
+    List<Prenotazione> prenotazioni;
+
+
 
     public Utente(String userName, String nomeCognome, String email) {
         this.userName = userName;
