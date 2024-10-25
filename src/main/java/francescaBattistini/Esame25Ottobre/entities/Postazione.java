@@ -22,7 +22,7 @@ public class Postazione {
     private String descrizione;
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private TypoPostazione typopostazione;
+    private TypoPostazione typoPostazione;
     @Column(nullable = false)
     private int numeroMaxPartecipanti;
 
@@ -38,7 +38,7 @@ public class Postazione {
 
     public Postazione(String descrizione, TypoPostazione typopostazione, int numeroMaxPartecipanti) {
         this.descrizione = descrizione;
-        this.typopostazione = typopostazione;
+        this.typoPostazione = typopostazione;
         this.numeroMaxPartecipanti = numeroMaxPartecipanti;
     }
 

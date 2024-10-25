@@ -17,7 +17,7 @@ public class Prenotazione {
     @Setter(AccessLevel.NONE)
     private Long id;
     @Column(nullable = false)
-    private LocalDate giornoPrenotazioni;
+    private LocalDate giornoPrenotazione;
 
     @ManyToOne//tante prenotazioni per un utente
     @JoinColumn(name = "id_utente")
@@ -28,7 +28,7 @@ public class Prenotazione {
     private Postazione postazione;
 
     public Prenotazione(LocalDate giornoPrenotazioni) {
-        this.giornoPrenotazioni = giornoPrenotazioni;
+        this.giornoPrenotazione = giornoPrenotazioni;
     }
 
 
