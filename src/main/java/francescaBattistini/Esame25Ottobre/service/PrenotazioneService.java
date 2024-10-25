@@ -25,14 +25,15 @@ public class PrenotazioneService {
         return prenotazioneRepository.existByGiornoPrenotazione(giornoPrenotazione);
     }
 
-    public Prenotazione savePrenotazione(Prenotazione prenotazione) {
+    public void savePrenotazione(Prenotazione prenotazione) {
         boolean exists = prenotazioneRepository.existByGiornoPrenotazione(prenotazione.getGiornoPrenotazione());
             if (exists) {
                 throw new ValidationException("prenotazione già esistente!");
             }
             prenotazioneRepository.save(prenotazione);
             log.info("La prenotazione " + prenotazione.getId() + " è stata salvata correttamente!");
-        }
+
+    }
 
     }
 
