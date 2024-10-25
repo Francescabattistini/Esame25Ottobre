@@ -1,5 +1,4 @@
 package francescaBattistini.Esame25Ottobre.repositories;
-
 import francescaBattistini.Esame25Ottobre.entities.Postazione;
 import francescaBattistini.Esame25Ottobre.enumes.TypoPostazione;
 import org.springframework.data.jpa.repository.JpaRepository;

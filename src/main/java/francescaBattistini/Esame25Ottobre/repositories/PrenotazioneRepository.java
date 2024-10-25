@@ -2,8 +2,6 @@ package francescaBattistini.Esame25Ottobre.repositories;
 
 import francescaBattistini.Esame25Ottobre.entities.Prenotazione;
 import francescaBattistini.Esame25Ottobre.entities.Utente;
-
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

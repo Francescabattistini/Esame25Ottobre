@@ -1,7 +1,6 @@
 package francescaBattistini.Esame25Ottobre.service;
 
 import francescaBattistini.Esame25Ottobre.entities.Edificio;
-import francescaBattistini.Esame25Ottobre.entities.Utente;
 import francescaBattistini.Esame25Ottobre.exceptions.ValidationException;
 import francescaBattistini.Esame25Ottobre.repositories.EdificioRepository;
 import lombok.extern.slf4j.Slf4j;
