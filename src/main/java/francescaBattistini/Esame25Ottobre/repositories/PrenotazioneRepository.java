@@ -13,5 +13,5 @@ import java.util.List;
 //utente può prenota la data della prenotazione
 @Repository
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione,Long> {
-List<Prenotazione> findByUtenteAndDataPrenotazione(Utente utente, LocalDate giornoPrenotazione);
+
 }

@@ -22,7 +22,7 @@ public class Edificio {
     @Column(nullable = false)
     private String indirizzoEdificio;
     @Column(nullable = false)
-    private String cittaEdificio;
+    private String citta;
     @OneToMany(mappedBy = "edificio")//un edificio per tante postazioni
     @ToString.Exclude
     private List<Postazione> postazioni;
@@ -30,7 +30,7 @@ public class Edificio {
     public Edificio(String nomeEdificio, String indirizzoEdificio, String cittaEdificio) {
         this.nomeEdificio = nomeEdificio;
         this.indirizzoEdificio = indirizzoEdificio;
-        this.cittaEdificio = cittaEdificio;
+        this.citta = cittaEdificio;
     }
 
 
